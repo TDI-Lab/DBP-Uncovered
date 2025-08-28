@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DBP Uncovered</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/register.css') }}">
+</head>
+<body>
+    <div class="register-container">
+        <div class="register-card">
+            <div class="register-header">
+                <div class="logo-section">
+                    <div class="logo-icon">🔬</div>
+                    <h1>Create Your Account</h1>
+                    <p>Please create your account to view and save results</p>
+                </div>
+            </div>
+
+            <div id="errorContainer" class="error-container" style="display: none;"></div>
+
+            <form id="registerForm" class="register-form">
+                <div class="form-group">
+                    <label for="username">
+                        <span class="label-icon">👤</span>
+                        Username
+                    </label>
+                    <input 
+                        type="text" 
+                        id="username" 
+                        name="username" 
+                        required 
+                        autocomplete="username"
+                        placeholder="Choose a unique username"
+                    >
+                    <div id="usernameError" class="field-error"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">
+                        <span class="label-icon">🔒</span>
+                        Password
+                    </label>
+                    <input 
+                        type="password" 
+                        id="password" 
+                        name="password" 
+                        required 
+                        autocomplete="new-password"
+                        placeholder="Create a secure password"
+                    >
+                    <div class="password-strength-container">
+                        <div class="strength-bar">
+                            <div id="strengthFill" class="strength-fill"></div>
+                        </div>
+                        <span id="passwordStrength" class="password-strength"></span>
+                    </div>
+                    <div id="passwordError" class="field-error"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirmPassword">
+                        <span class="label-icon">✅</span>
+                        Confirm Password
+                    </label>
+                    <input 
+                        type="password" 
+                        id="confirmPassword" 
+                        name="confirmPassword" 
+                        required 
+                        autocomplete="new-password"
+                        placeholder="Confirm your password"
+                    >
+                    <div id="confirmPasswordError" class="field-error"></div>
+                </div>
+
+                <button type="submit" id="submitButton" class="btn-primary" disabled>
+                    <span class="btn-text">Create Account</span>
+                    <span class="btn-icon">→</span>
+                </button>
+
+                <div id="loadingSpinner" class="loading-spinner" style="display: none;">
+                    <div class="spinner"></div>
+                    <span>Creating your account...</span>
+                </div>
+            </form>
+
+            <div class="register-footer">
+                <div class="security-note">
+                    <span class="security-icon">🔐</span> <p>Your data is encrypted and securely stored</p>
+                </div>
+                <div class="footer-links">
+                    <a href="{{ url_for('action_reaction') }}" class="link-primary">← Back to Survey</a>
+                    <a href="{{ url_for('dashboard') }}" class="link-primary">Dashboard</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/register.js') }}"></script>
+</body>
+</html>

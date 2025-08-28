@@ -1,0 +1,444 @@
+/* Challenge-specific styles */
+
+/* Challenge Container */
+.challenge-container {
+  width: 100%;
+  max-width: 800px;
+}
+
+.challenge-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/*.challenge-progress {
+  margin-top: 1.5rem;
+}*/
+
+.challenge-progress .progress-bar {
+  width: 100%;               /* full width of its container */
+  height: 12px;              /* give it a visible height */
+  background-color: #e0e0e0; /* light-gray track */
+  border-radius: 6px;        /* rounded corners */
+  overflow: hidden;          /* clip the fill at the edges */
+  margin-top: 0.5rem;        /* space above/below if you like */
+}
+
+/* the “fill” */
+#challenge-progress-fill {
+  height: 100%;               /* match the track’s height */
+  width: 25%;                 /* whatever percentage you set inline */
+  background-color: #3b82f6;  /* blue fill (you can swap to your --primary-color) */
+  transition: width 0.3s ease;/* smooth animate on width changes */
+}
+/* Welcome Page */
+.welcome-content {
+  text-align: center;
+  padding: 2rem;
+}
+
+.challenge-intro h2 {
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.challenge-intro p {
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.challenge-features {
+  background-color: #f8fafc;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  text-align: left;
+}
+
+.challenge-features h3 {
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.challenge-features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.challenge-features li {
+  padding: 0.5rem 0;
+  color: var(--text-secondary);
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.challenge-features li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--success-color);
+  font-weight: bold;
+}
+
+.challenge-info {
+  display: grid;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.info-item {
+  padding: 1rem;
+  background-color: var(--option-hover);
+  border-radius: 0.5rem;
+  border-left: 4px solid var(--primary-color);
+}
+
+.challenge-actions {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+/* Page Introduction */
+.page-intro {
+  text-align: center;
+  padding: 2rem;
+}
+
+.page-header h2 {
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.page-description {
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+}
+
+.page-info {
+  margin: 2rem 0;
+}
+
+.info-card {
+  background-color: #f8fafc;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.info-card h3 {
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.info-card p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.question-count {
+  padding: 1rem;
+  background-color: var(--option-active);
+  border-radius: 0.5rem;
+  color: var(--primary-color);
+}
+
+/* Question Content */
+.question-content {
+  padding: 2rem;
+}
+
+.question-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.question-number {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
+
+.learning-badge {
+  background-color: var(--success-color);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.question-text {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 2rem;
+}
+
+.learning-content {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #f0f9ff;
+  border-radius: 0.5rem;
+  border-left: 4px solid var(--primary-color);
+}
+
+.learning-content h4 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.learning-content p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Feedback Content */
+.feedback-content {
+  padding: 2rem;
+  text-align: center;
+}
+
+.feedback-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.explanation-section,
+.learning-reinforcement {
+  margin: 2rem 0;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  text-align: left;
+}
+
+.explanation-section {
+  background-color: #fef7ff;
+  border-left: 4px solid #a855f7;
+}
+
+.learning-reinforcement {
+  background-color: #f0fdf4;
+  border-left: 4px solid var(--success-color);
+}
+
+.explanation-section h4,
+.learning-reinforcement h4 {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.explanation-section p,
+.learning-reinforcement p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+/* Page Completion */
+.page-completion {
+  padding: 2rem;
+  text-align: center;
+}
+
+.completion-header h2 {
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+}
+
+.section-score {
+  margin: 2rem 0;
+}
+
+.score-circle {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: var(--success-bg);
+  border: 4px solid var(--success-color);
+}
+
+.score-number {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--success-color);
+}
+
+.score-label {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.completion-summary {
+  margin: 2rem 0;
+  text-align: left;
+}
+
+.completion-summary h3 {
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+}
+
+.learning-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.learning-point {
+  padding: 1rem;
+  background-color: #f8fafc;
+  border-radius: 0.5rem;
+  border-left: 4px solid var(--primary-color);
+}
+
+.completion-actions {
+  margin-top: 2rem;
+}
+
+/* Challenge Completion */
+.challenge-completion {
+  padding: 2rem;
+  text-align: center;
+}
+
+.completion-celebration {
+  margin-bottom: 2rem;
+}
+
+.celebration-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.celebration-message {
+  color: var(--text-secondary);
+  font-size: 1.125rem;
+  margin-top: 0.5rem;
+}
+
+.final-results {
+  margin: 2rem 0;
+}
+
+.final-score {
+  padding: 2rem;
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.final-score.excellent {
+  background-color: var(--success-bg);
+  border: 2px solid var(--success-color);
+}
+
+.final-score.good {
+  background-color: #f0f9ff;
+  border: 2px solid #3b82f6;
+}
+
+.final-score.fair {
+  background-color: #fffbeb;
+  border: 2px solid #f59e0b;
+}
+
+.final-score.needs-improvement {
+  background-color: var(--error-bg);
+  border: 2px solid var(--error-color);
+}
+
+.score-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.final-score-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.final-percentage {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.performance-message {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.learning-achievements {
+  margin: 2rem 0;
+  text-align: left;
+}
+
+.learning-achievements h3 {
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.achievement-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #f8fafc;
+  border-radius: 0.5rem;
+  border-left: 4px solid var(--primary-color);
+}
+
+.achievement-icon {
+  font-size: 1.5rem;
+}
+
+.achievement-text {
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .challenge-actions {
+    flex-direction: column;
+  }
+
+  .question-header {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+
+  .achievements-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .score-circle {
+    width: 100px;
+    height: 100px;
+  }
+
+  .score-number {
+    font-size: 1.25rem;
+  }
+}

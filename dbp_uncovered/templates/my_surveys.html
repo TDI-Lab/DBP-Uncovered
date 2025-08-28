@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DBP Uncovered</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/survey_history.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="page-header">
+            <div class="header-content">
+                <div class="header-info">
+                    <h1>My Action Lists</h1>
+                    <p>Welcome back, <strong>{{ username }}</strong>! <br>Here are all your recommended action lists.</p>
+                </div>
+                <div class="header-actions">
+                    <a href="{{ url_for('logout') }}" class="btn btn-logout">
+                        <i class="fas fa-sign-out-alt"></i>
+                        Logout
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            {% if surveys %}
+            <div class="surveys-section">
+                <div class="section-header">
+                    <h2>Your Action Lists ({{ surveys|length }})</h2>
+                    <a href="{{ url_for('action_reaction') }}" class="btn btn-primary">
+                        <i class="fas fa-plus"></i>
+                        Give new responses
+                    </a>
+                </div>
+                
+                <div class="surveys-grid">
+                    {% for survey in surveys %}
+                    <div class="survey-card">
+                        <div class="survey-header">
+                            <div class="survey-number">
+                                <i class="fas fa-clipboard-list"></i>
+                                Action List {{ loop.revindex }}
+                            </div>
+                            <div class="survey-status">
+                                <span class="status-badge completed">
+                                    <i class="fas fa-check-circle"></i>
+                                    Completed
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <div class="survey-content">
+                            <div class="survey-date">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>{{ survey.answered_at.strftime('%B %d, %Y') }}</span>
+                            </div>
+                            <div class="survey-time">
+                                <i class="fas fa-clock"></i>
+                                <span>{{ survey.answered_at.strftime('%I:%M %p') }}</span>
+                            </div>
+                        </div>
+                        
+                        <div class="survey-actions">
+                            <a href="{{ url_for('view_survey_result', survey_id=survey.id) }}" 
+                               class="btn btn-view-results">
+                                <i class="fas fa-eye"></i>
+                                View Results
+                            </a>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            {% else %}
+            <div class="empty-state">
+                <div class="empty-icon">
+                    <i class="fas fa-clipboard-list"></i>
+                </div>
+                <h3>No Action Lists Yet</h3>
+                <p>You haven't completed any surveys yet. Take your first survey to get personalized recommendations!</p>
+                <a href="{{ url_for('action_reaction') }}" class="btn btn-primary btn-large">
+                    <i class="fas fa-clipboard-list"></i>
+                    Take Your First Survey
+                </a>
+            </div>
+            {% endif %}
+        </main>
+
+        <div class="page-actions">
+            <a href="{{ url_for('dashboard') }}" class="btn btn-secondary">
+                <i class="fas fa-arrow-left"></i>
+                Back to Dashboard
+            </a>
+        </div>
+    </div>
+</body>
+</html>

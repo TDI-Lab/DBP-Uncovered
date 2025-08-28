@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DBP Uncovered</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/interactive.css') }}">
+</head>
+<body>
+    <div class="page-container">
+        <header class="page-header">
+            <h1>House health check up</h1>
+            <a href="{{ url_for('dashboard') }}" class="back-button">← Back to Dashboard</a>
+        </header>
+        <div class="page-content">
+            <div class="images-grid">
+                
+                <!-- First Image - Bathroom -->
+                <div class="image-card">
+                    <h2 class="image-title">Bathroom</h2>
+                    <div class="image-container">
+                        <img src="{{ url_for('static', filename='images/bathroom.jpg') }}" height="400"width="600" alt="Bathroom" class="interactive-image">
+                        
+                        <!-- Copy the div below to add more hotspots in the image-->
+                        <div class="hotspot" style="top: 35%; left: 68%;">
+                            <div class="hotspot-marker"></div>
+                            <div class="popup-card">
+                                <h3>Shower</h3>
+                                <p>Reducing hot shower time can reduce DBP consumption by inhalation</p>
+                            </div>
+                        </div>
+                        
+                        <div class="hotspot" style="top: 70%; left: 85%;">
+                            <div class="hotspot-marker"></div>
+                            <div class="popup-card">
+                                <h3>Sink</h3>
+                                <p>Running tap water before drinking can reduce DBP consumption</p>
+                            </div>
+                        </div>
+                        <div class="hotspot" style="top: 80%; left: 10%;">
+                            <div class="hotspot-marker"></div>
+                            <div class="popup-card">
+                                <h3>Cleaning Products</h3>
+                                <p>Use bleach alternative</p>
+                            </div>
+                        </div>
+                        <div class="hotspot" style="top: 5%; left: 40%;">
+                            <div class="hotspot-marker"></div>
+                            <div class="popup-card">
+                                <h3>Ventilation Fan</h3>
+                                <p>Use ventilation fan while showering or bathing to quickly remove steam that may contain DBPs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Image - Kitchen -->
+                <div class="image-card">
+                    <h2 class="image-title">Kitchen</h2>
+                    <div class="image-container">
+                        <img src="{{ url_for('static', filename='images/kitchen.jpg') }}" height="400"width="600" alt="Kitchen" class="interactive-image">
+                        
+                        <!-- Kitchen Hotspots -->
+                        <div class="hotspot component" style="top: 55%; left: 85%;">
+                            <div class="hotspot-marker component-marker"></div>
+                            <span class="component-label">Kettle</span>
+                            <div class="popup-card">
+                                <h3>Kettle</h3>
+                                <p>Boiling water in kettle can reduce DBP in drinking water</p>
+                            </div>
+                        </div>
+                        
+                        <div class="hotspot component" style="top: 57%; left: 45%;">
+                            <div class="hotspot-marker component-marker"></div>
+                            <span class="component-label">Stove</span>
+                            <div class="popup-card">
+                                <h3>Stove</h3>
+                                <p>Avoid iodinized salts when cooking as they can react with DBPs</p>
+                            </div>
+                        </div>
+                        <div class="hotspot component" style="top: 50%; left: 90%;">
+                            <div class="hotspot-marker component-marker"></div>
+                            <span class="component-label">Tap</span>
+                            <div class="popup-card">
+                                <h3>Tap</h3>
+                                <p>Use instant boiling units</p>
+                                <p>Run water for 30 seconds in the morning to clear stagnant water and reduce DBPs. </p>
+                            </div>
+                        </div>
+                        <div class="hotspot component" style="top: 70%; left: 70%;">
+                            <div class="hotspot-marker component-marker"></div>
+                            <span class="component-label">Fridge</span>
+                            <div class="popup-card">
+                                <h3>Fridge</h3>
+                                <p>Refridgerate water before consuming</p>
+                                <p>Cooler water slows DBP formation and reduces taste/odor issues</p>
+                            </div>
+                        </div>
+                        <div class="hotspot component" style="top: 58%; left: 75%;">
+                            <div class="hotspot-marker component-marker"></div>
+                            <span class="component-label">Clay pot</span>
+                            <div class="popup-card">
+                                <h3>Clay Pot</h3>
+                                <p>Store water in a clay pot before consuming</p>
+                                <p>Clay pots naturally cool water, which can slow chemical reactions like DBP formation. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

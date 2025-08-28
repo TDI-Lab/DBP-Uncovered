@@ -1,0 +1,75 @@
+{
+  "id": 1,
+  "page": 1,
+  "title": "Room 1: Chemical Clue Room",
+  "description": "In town’s science archieve, some strange chemical reports have been found. But not many people are able to understand what DBPs are. Your mission is to decipher what DBPs are.",
+  "questions": [
+  {
+    "id": "c1q1",
+    "question": "What does DBP stand for?",
+    "options": [
+      "Disinfection By-Product",
+      "Dissolved Biochemical Particles",
+      "Drinking Base Pollutant"
+    ],
+    "correct_answer": "Disinfection By-Product",
+    "explanation": "DBPs are chemicals formed when disinfectants like chlorine react with natural matter in water.",
+    "learning_content": "DBPs are unintended chemical by-products from disinfecting water.",
+    "Clue": "Think about what’s left behind after disinfecting water."
+  },
+  {
+    "id": "c1q2",
+    "question": "When are DBPs most likely to form?",
+    "options": [
+      "When water is frozen",
+      "When chlorine reacts with organic matter",
+      "During water boiling"
+    ],
+    "correct_answer": "When chlorine reacts with organic matter",
+    "explanation": "Chlorine disinfects water but reacts with leaves, soil, and other organic material to form DBPs.",
+    "learning_content": "Chlorine + natural matter = DBPs.",
+    "Clue": "Disinfection reactions with natural stuff can cause unexpected results."
+  },
+  {
+    "id": "c1q3",
+    "question": "Which of these is a common disinfectant that can cause DBP formation?",
+    "options": [
+      "Chlorine",
+      "Fluoride",
+      "Baking soda"
+    ],
+    "correct_answer": "Chlorine",
+    "explanation": "Chlorine is commonly used to kill germs but also forms DBPs when it reacts with organic material.",
+    "learning_content": "Chlorine helps disinfect water but can also create harmful by-products.",
+    "Clue": "It’s the go-to chemical for killing germs in drinking water."
+  },
+  {
+    "id": "c1q4",
+    "question": "Why are DBPs found more in treated water than in natural water sources?",
+    "options": [
+      "Natural water is always clean",
+      "DBPs are only added by factories",
+      "DBPs form during disinfection"
+    ],
+    "correct_answer": "DBPs form during disinfection",
+    "explanation": "Disinfection is meant to clean water, but this process can also create DBPs.",
+    "learning_content": "Disinfection helps safety, but also creates DBPs.",
+    "Clue": "Treated water is safer, but chemical reactions come with trade-offs."
+  },
+  {
+    "id": "c1q5",
+    "question": "Which condition can increase DBP formation?",
+    "options": [
+      "Cold water",
+      "High organic matter",
+      "Low pH"
+    ],
+    "correct_answer": "High organic matter",
+    "explanation": "More natural material in water increases chances for DBP formation when disinfectants are added.",
+    "learning_content": "More natural material = more DBPs if disinfectants are used.",
+    "Clue": "More stuff floating in your water = more reactions during treatment."
+  }
+]
+
+
+}

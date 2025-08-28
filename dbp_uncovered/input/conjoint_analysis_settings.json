@@ -1,0 +1,56 @@
+{
+    "DBP-merged": true,
+    "dec_matrix_settings": {
+        "input_file": "./input/input_data_topsis_IQR_merge-DBP_all-DBP.xlsx",
+        "cost_time_setting": "IQR",
+        "collect_DBP": "all-DBP"
+    },
+    "DBP_ranking": {
+        "THM": 1,
+        "IDBP": 1,
+        "BrDBP": 1,
+        "HAA": 2,
+        "HAN": 3,
+        "CB": 4,
+        "NS": 5,
+        "HAL": 6,
+        "HAM": 7,
+        "HNM": 8,
+        "HBQ": 9,
+        "PDBP": 10,
+        "HP": 11,
+        "BPA": 12,
+        "VOC": 12,
+        "HDBP": 12,
+        "AOX": 12
+    },
+    "action_category_ranking": {
+        "RW": 1,
+        "CA": 1,
+        "PN": 1,
+        "PC": 1,
+        "FL": 1,
+        "BL": 1,
+        "CK": 1,
+        "A_other": 1
+    },
+    "weight_settings": {
+        "all_DBP": {
+            "type": 1,
+            "weight": 0.286
+        },
+        "cost_tier": {
+            "type": 1,
+            "weight": 0.303
+        },
+        "time_tier": {
+            "type": 1,
+            "weight": 0.151
+        },
+        "repeat_tier": {
+            "type": 1,
+            "weight": 0.26
+        }
+    },
+    "settings_name": "conjoint_analysis"
+}

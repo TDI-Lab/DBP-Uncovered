@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "question": "Your public water is free from chemical by-products.",
+    "options": ["True", "False"],
+    "correct_answer": "False",
+    "explanation": "Even treated water contains tiny amounts of disinfection by-products(DBPs)- chemical compounds that form when disinfectants react with natural organic matter in water."
+  },
+  {
+    "id": 2,
+    "question": "Which water treatment process can create harmful by-products?",
+    "options": ["Boiling", "Filteration", "Chlorination", "Freezing"],
+    "correct_answer": "Chlorination",
+    "explanation": "Chlorine disinfects water by killing bacteria, but it also reacts with organic matter to form disinfection by-products(DBPs). Some of these have potential health risks."
+  },
+  {
+    "id": 3,
+    "question": "How many types of DBPs have been identified in drinking water worldwide?",
+    "options": ["<10", "200", ">800", "Not known"],
+    "correct_answer": ">800",
+    "explanation": "Scientists have discovered over 800 different types of Disinfection by-products(DBPs) in water bodies. While only a few are regulated, some may have health risks."
+  },
+  {
+    "id": 4,
+    "question": "What is the major health risk associated with long-term exposure to certain DBPs?",
+    "options": ["Respiratory diseases", "Skin irritation", "Cancer", "Bowel problems"],
+    "correct_answer": "Cancer",
+    "explanation": "Long-term exposure to some disinfection by-products, have been linked to cancer risks particularly bladder caner.\nBut don't worry, we have tips for minimizing these risks."
+  },
+  {
+    "id": 5,
+    "question": "All the DBPs are harmful and regulated by health agencies?",
+    "options": ["True", "False"],
+    "correct_answer": "False",
+    "explanation": "Not all DBPs are harmful, and only a few are regulated. But some still pose risks, so it’s important to know which ones. <br> Let’s dive into the details in the website!"
+  }
+]

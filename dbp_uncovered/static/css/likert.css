@@ -1,0 +1,118 @@
+#likert {
+  display: none;
+}
+
+
+.likert-block {
+  margin-bottom: 2rem;
+}
+
+.likert-scale {
+  display: flex;
+  justify-content: space-between;
+}
+
+.likert-scale label {
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+}
+
+.likert-scale input[type="radio"] {
+  display: none;
+}
+
+.likert-scale span {
+  display: block;
+  padding: 0.5rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  background: white;
+}
+
+.likert-scale input[type="radio"]:checked + span {
+  background: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.likert-scale span:hover {
+  background: #e0e7ff;
+}
+
+.likert-page {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #f0f4f8;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.likert-page h2 {
+  margin-bottom: 1rem;
+}
+
+.likert-page p {
+  margin-bottom: 2rem;
+}
+
+.likert-scale {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.likert-scale label {
+  flex: 1;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.likert-scale input[type="radio"] {
+  display: none;
+}
+
+.likert-scale span {
+  display: block;
+  padding: 1rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-size: 1.2rem;
+  background: white;
+}
+
+.likert-scale small {
+  font-size: 0.8rem;
+  color: #555;
+}
+
+.likert-scale input[type="radio"]:checked + span {
+  background: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.likert-scale span:hover {
+  background: #e0e7ff;
+}
+
+#submit-feedback {
+  margin-top: 2rem;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#submit-feedback:hover {
+  background: #218838;
+}

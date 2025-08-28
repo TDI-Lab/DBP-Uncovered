@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DBP Uncovered</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    
+    <main class="container">
+        
+        <h1>DBP Uncovered </h1>
+            <p class="subtitle">Uncovering the hidden risks in your water.</p>
+            <p class="subtitle">Welcome to the DBP Uncovered tool. <br> Answer the following questions to learn about DBP and dive deep into the unknown.</p>
+        
+        <div class="quiz-container">
+            <div id="quiz-card" class="card">
+                <!-- Quiz content will be loaded here by JavaScript -->
+                <div class="loader">Loading...</div>
+            </div>
+            
+            <div class="progress-container">
+                <div id="progress-text">Question 1 of 5</div>
+                <div class="progress-bar">
+                    <div id="progress-fill" style="width: 20%"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        // Store quiz data from Flask
+        const quizData = {{ quiz_data|tojson }};
+    </script>
+    <script src="{{ url_for('static', filename='js/script2.js') }}"></script>
+</body>
+</html>

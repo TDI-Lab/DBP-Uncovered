@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DBP Uncovered</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/challenge.css') }}">
+</head>
+<body>
+    <main class="container">
+        <div class="challenge-container">
+            
+            <div id="challenge-content" class="card">
+                <!-- Challenge content will be loaded here by JavaScript -->
+                <div class="loader">Loading challenge...</div>
+            </div>
+            
+            <div class="challenge-progress">
+                <div id="challenge-progress-text">Room 1 of 4</div>
+                <div class="progress-bar">
+                    <div id="challenge-progress-fill" style="width: 25%"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        // Store challenge data from Flask
+        const challengeData = {{ challenge_data|tojson }};
+        const dashboardUrl = "{{ url_for('dashboard') }}";
+    </script>
+    <script src="{{ url_for('static', filename='js/challenge.js') }}"></script>
+</body>
+</html>

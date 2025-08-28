@@ -1,0 +1,74 @@
+{
+  "id": 4,
+  "page": 4,
+  "title": "Room 4: Treatment Control Room",
+  "description": "You’ve reached the final room: the treatment control room. Purification systems of the town are collapsing and bad household practices are one of the main reason. You must transfer the knowledge about safe home-level strategies to restore clean water to the town.",
+  "questions": [
+  {
+    "id": "c4q1",
+    "question": "Which of the following can help reduce DBPs in drinking water?",
+    "options": [
+      "Using a water filter",
+      "Carbonating water",
+      "Using BPA plastics"
+    ],
+    "correct_answer": "Using a water filter",
+    "explanation": "Filters can remove DBPs and other chemicals from tap water.",
+    "learning_content": "Use certified filters (like carbon-based) to reduce DBPs at home.",
+    "Clue": "It’s a common appliance used right at the tap."
+  },
+  {
+    "id": "c4q2",
+    "question": "What is a simple way to reduce DBPs from hot water use?",
+    "options": [
+      "Take shorter showers",
+      "Add soap to your water",
+      "Use only cold water for cooking"
+    ],
+    "correct_answer": "Take shorter showers",
+    "explanation": "Shorter showers reduce steam inhalation and overall DBP exposure from hot water.",
+    "learning_content": "Shorter hot showers = less DBP exposure.",
+    "Clue": "Less time with steam means less exposure."
+  },
+  {
+    "id": "c4q3",
+    "question": "How does ventilation help during hot water use?",
+    "options": [
+      "It cools down the room",
+      "It removes DBPs from the air",
+      "It makes the water cleaner"
+    ],
+    "correct_answer": "It removes DBPs from the air",
+    "explanation": "Good ventilation helps clear DBPs released in steam during activities like showering.",
+    "learning_content": "Open a window or use a fan to lower airborne DBP exposure.",
+    "Clue": "Air movement can clear out more than just heat."
+  },
+  {
+    "id": "c4q4",
+    "question": "Which water source is typically lower in DBPs?",
+    "options": [
+      "Tap water",
+      "Filtered water",
+      "Pool water"
+    ],
+    "correct_answer": "Filtered water",
+    "explanation": "Filtered water can significantly reduce DBP levels.",
+    "learning_content": "Filtered water usually contains fewer DBPs than untreated tap water.",
+    "Clue": "It’s been cleaned a step further than regular tap water."
+  },
+  {
+    "id": "c4q5",
+    "question": "Why shouldn't you rely only on boiling water to remove DBPs?",
+    "options": [
+      "It can increase some DBPs",
+      "It removes all chemicals",
+      "It makes the water fizzy"
+    ],
+    "correct_answer": "It can increase some DBPs",
+    "explanation": "Boiling can concentrate certain DBPs instead of removing them.",
+    "learning_content": "Boiling water doesn’t always reduce DBPs—use proper filtration instead.",
+    "Clue": "Heat doesn’t always mean safer, it might intensify certain things."
+  }
+]
+
+}

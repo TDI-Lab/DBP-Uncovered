@@ -1,0 +1,76 @@
+{
+  "id": 3,
+  "page": 3,
+  "title": "Room 3: Health Monitoring Center",
+  "description": "You find yourself in a public health monitoring center. Patient reports scroll across the screens — increased cancers, birth defects, respiratory symptoms. You must diagnose the possible links to DBP exposure using the right evidence.",
+  "questions": [
+  {
+    "id": "c3q1",
+    "question": "What is a potential long-term health risk of exposure to DBPs?",
+    "options": [
+      "Cancer",
+      "Improved hydration",
+      "Stronger teeth"
+    ],
+    "correct_answer": "Cancer",
+    "explanation": "Some DBPs have been linked to increased risks of cancers such as bladder cancer after long-term exposure.",
+    "learning_content": "Long-term exposure to DBPs may increase cancer risk.",
+    "Clue": "The concern is about what can happen after years of consuming them."
+  },
+  {
+    "id": "c3q2",
+    "question": "Who is most at risk from DBP exposure?",
+    "options": [
+      "Healthy adults",
+      "Vulnerable groups like pregnant women",
+      "People who eat spicy food"
+    ],
+    "correct_answer": "Vulnerable groups like pregnant women",
+    "explanation": "Pregnant women, infants, and people with weakened immune systems are more sensitive to DBP effects.",
+    "learning_content": "Certain groups are more vulnerable to DBPs, especially during pregnancy.",
+    "Clue": "These groups are often more sensitive to environmental risks in general."
+  },
+  {
+    "id": "c3q3",
+    "question": "How can DBPs enter the human body?",
+    "options": [
+      "Only through food",
+      "By drinking or inhaling water vapour",
+      "Through sunlight"
+    ],
+    "correct_answer": "By drinking or inhaling water vapour",
+    "explanation": "DBPs can be absorbed by drinking water, inhaling steam (e.g., from showers), or through skin contact.",
+    "learning_content": "DBP exposure can happen through drinking, breathing, or skin contact.",
+    "Clue": "Think beyond just drinking, consider the bathroom too."
+  },
+  {
+    "id": "c3q4",
+    "question": "Which everyday activity might increase DBP exposure?",
+    "options": [
+      "Taking long hot showers",
+      "Listening to music",
+      "Washing clothes in cold water"
+    ],
+    "correct_answer": "Taking long hot showers",
+    "explanation": "Hot water releases DBPs into steam, which can be inhaled and increase exposure risk.",
+    "learning_content": "Hot showers may increase DBP exposure via inhalation.",
+    "Clue": "Heat and steam can release things into the air."
+  },
+  {
+    "id": "c3q5",
+    "question": "What is one reason DBPs are still used despite health risks?",
+    "options": [
+      "They improve taste",
+      "Disinfection is necessary to kill harmful microbes",
+      "They are cheaper than bottled water"
+    ],
+    "correct_answer": "Disinfection is necessary to kill harmful microbes",
+    "explanation": "Disinfection prevents deadly diseases. The health benefit outweighs the DBP risk if levels are controlled.",
+    "learning_content": "Disinfection is vital—DBP risks are managed to keep water safe overall.",
+    "Clue": "It’s a trade-off between removing germs and creating by-products."
+  }
+]
+
+
+
+}

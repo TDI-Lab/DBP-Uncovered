@@ -1,0 +1,75 @@
+{
+  "id": 2,
+  "page": 2,
+  "title": "Room 2: Compound lab",
+  "description": "You move into a cold storage lab with vials labeled only with codes: THM-001, HAA-004,… You need to identify these compounds and what they do. The system only accepts correct classifications, mistakes could cause a chemical spill!",
+  "questions": [
+  {
+    "id": "c2q1",
+    "question": "Which of these is a common type of DBP found in tap water?",
+    "options": [
+      "Trihalomethanes (THMs)",
+      "Hydrochloric acid",
+      "Sodium bicarbonate"
+    ],
+    "correct_answer": "Trihalomethanes (THMs)",
+    "explanation": "THMs are among the most common DBPs and are monitored in drinking water worldwide.",
+    "learning_content": "THMs are a key group of DBPs that can form during water disinfection.",
+    "Clue": "This group of DBPs is widely tracked in drinking water systems."
+  },
+  {
+    "id": "c2q2",
+    "question": "Which of the following is another major DBP group besides THMs?",
+    "options": [
+      "Haloacetic acids (HAAs)",
+      "Chlorophyll",
+      "Carbon monoxide"
+    ],
+    "correct_answer": "Haloacetic acids (HAAs)",
+    "explanation": "HAAs are another regulated class of DBPs formed during disinfection with chlorine.",
+    "learning_content": "HAAs are common DBPs, along with THMs.",
+    "Clue": "These acids form during disinfection, just like THMs."
+  },
+  {
+    "id": "c2q3",
+    "question": "What do both THMs and HAAs have in common?",
+    "options": [
+      "They are natural minerals",
+      "They are formed during water disinfection",
+      "They clean the water"
+    ],
+    "correct_answer": "They are formed during water disinfection",
+    "explanation": "Both THMs and HAAs are produced when disinfectants like chlorine react with organic matter.",
+    "learning_content": "THMs and HAAs are formed by disinfectants reacting with organic materials.",
+    "Clue": "They’re both created as a result of water treatment."
+  },
+  {
+    "id": "c2q4",
+    "question": "Which of these is the best description of DBP types?",
+    "options": [
+      "All harmless minerals",
+      "Groups of chemicals formed during disinfection",
+      "Vitamins added to water"
+    ],
+    "correct_answer": "Groups of chemicals formed during disinfection",
+    "explanation": "DBPs include several chemical groups like THMs and HAAs, formed as by-products of disinfection.",
+    "learning_content": "DBPs are chemical groups unintentionally created during water treatment.",
+    "Clue": "Think about what’s created unintentionally while cleaning water."
+  },
+  {
+    "id": "c2q5",
+    "question": "Why are some DBPs grouped into types like THMs and HAAs?",
+    "options": [
+      "Because they taste different",
+      "To help regulate and monitor them",
+      "For branding purposes"
+    ],
+    "correct_answer": "To help regulate and monitor them",
+    "explanation": "Grouping DBPs helps scientists and governments monitor and control their presence in water supplies.",
+    "learning_content": "Grouping DBPs (e.g., THMs, HAAs) helps track and control them in water.",
+    "Clue": "Labeling things makes it easier for scientists and regulators to keep track."
+  }
+]
+
+
+}

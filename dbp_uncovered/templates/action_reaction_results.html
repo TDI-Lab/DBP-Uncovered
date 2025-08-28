@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Results - DBP Survey System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/action_reaction_results.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header class="page-header">
+            <div class="header-content">
+                <div class="header-info">
+                    <h1>Personalized Action List</h1>
+                    <p>Hello <strong>{{ username }}! </strong> <br> Here are your personalized recommendations.</p>
+                </div>
+                <div class="header-actions">
+                    <a href="{{ url_for('my_surveys') }}" class="btn btn-secondary">
+                        <i class="fas fa-list"></i>
+                        My Lists
+                    </a>
+                    <a href="{{ url_for('logout') }}" class="btn btn-logout">
+                        <i class="fas fa-sign-out-alt"></i>
+                        Logout
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <!-- Colored Actions Results Section -->
+            <div class="results-section">
+                <div class="section-header">
+                    <h2>
+                        <i class="fas fa-list-ul"></i>
+                        Recommended Actions
+                    </h2>
+                    <div class="color-legend">
+                        <div class="legend-item">
+                            <div class="color-indicator green"></div>
+                            <span>Actions you already take</span>
+                        </div>
+                        <div class="legend-item">
+                            <div class="color-indicator red"></div>
+                            <span>Recommended actions for you</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="actions-container">
+                    <table class="actions-table">
+                        <thead>
+                            <tr>
+                                <th>Priority Rank</th>
+                                <th>Action</th>
+                                <th>Priority</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for action in colored_actions %}
+                            <tr class="action-row {{ action.color }}">
+                                <td>{{ loop.index}}</td>
+                                <td class="action-description">{{ action.action }}</td>
+                                <td class="action-priority">
+                                    <div class="priority-indicator {{ action.color }}">
+                                        {% if action.color == 'green' %}
+                                        <i class="fas fa-check-circle"></i>
+                                        Actions you already take
+                                        {% else %}
+                                        <i class="fas fa-times-circle"></i>
+                                        Actions you need to take
+                                        {% endif %}
+                                    </div>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Additional Information Section -->
+            {% if additional_info %}
+            <div class="additional-info-section">
+                <div class="section-header">
+                    <h2>
+                        <i class="fas fa-user-cog"></i>
+                        Your Preferences
+                    </h2>
+                </div>
+                
+                <div class="info-grid">
+                    {% for info in additional_info %}
+                    <div class="info-card">
+                        <div class="info-label">{{ info.label }}</div>
+                        <div class="info-value">{{ info.value }}</div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+        </main>
+
+        <div class="page-actions">
+            <a href="{{ url_for('action_reaction') }}" class="btn btn-primary">
+                <i class="fas fa-plus"></i>
+                Take New Survey
+            </a>
+            <a href="{{ url_for('dashboard') }}" class="btn btn-secondary">
+                <i class="fas fa-home"></i>
+                Back to Dashboard
+            </a>
+        </div>
+    </div>
+</body>
+</html>

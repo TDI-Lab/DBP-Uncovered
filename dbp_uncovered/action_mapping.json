@@ -1,0 +1,147 @@
+[
+  {
+    "code": "PM",
+    "action": "Change-plumbing-material",
+    "number": 1
+  },
+  {
+    "code": "FP",
+    "action": "Flush-pipes-regularly",
+    "number": 2
+  },
+  {
+    "code": "BP",
+    "action": "Use-bleach-alternative",
+    "number": 3
+  },
+  {
+    "code": "BPAP",
+    "action": "Avoid-BPA-product",
+    "number": 4
+  },
+  {
+    "code": "RF",
+    "action": "Replace-filter-cartridge",
+    "number": 5
+  },
+  {
+    "code": "RST",
+    "action": "Reduce-shower-length",
+    "number": 6
+  },
+  {
+    "code": "IV",
+    "action": "Increase-bathroom-ventilation",
+    "number": 7
+  },
+  {
+    "code": "VC",
+    "action": "Increase-cleaning-ventilation",
+    "number": 8
+  },
+  {
+    "code": "NaCl",
+    "action": "Avoid-iodine-salts",
+    "number": 9
+  },
+  {
+    "code": "RFW",
+    "action": "Refrigerate-water",
+    "number": 10
+  },
+  {
+    "code": "IG",
+    "action": "Soak-iodine-ingredients",
+    "number": 11
+  },
+  {
+    "code": "WS",
+    "action": "Store-water-clay",
+    "number": 12
+  },
+  {
+    "code": "HCT",
+    "action": "Salt-cook-hotter",
+    "number": 13
+  },
+  {
+    "code": "IBL",
+    "action": "Boil-instant-boiling-unit",
+    "number": 14
+  },
+  {
+    "code": "BR",
+    "action": "Brew-beverage-open",
+    "number": 15
+  },
+  {
+    "code": "AC",
+    "action": "Use-actcarbon-filter",
+    "number": 16
+  },
+  {
+    "code": "AC_IER",
+    "action": "Use-actcarbon-ionexch-filter",
+    "number": 17
+  },
+  {
+    "code": "MT",
+    "action": "Use-membrane-filter",
+    "number": 18
+  },
+  {
+    "code": "BD",
+    "action": "Boil-kettle",
+    "number": 19
+  },
+  {
+    "code": "SS",
+    "action": "Ventilate-between-showers",
+    "number": 20
+  },
+  {
+    "code": "AC_MT",
+    "action": "Use-actcarbon-membrane-filter",
+    "number": 21
+  },
+  {
+    "code": "PP",
+    "action": "Use-polyprop-filter",
+    "number": 22
+  },
+  {
+    "code": "LCT",
+    "action": "Salt-cook-longer",
+    "number": 23
+  },
+  {
+    "code": "DU",
+    "action": "Use-distil-unit",
+    "number": 24
+  },
+  {
+    "code": "PSS",
+    "action": "Pour-stir-shake-drink",
+    "number": 25
+  },
+  {
+    "code": "STC",
+    "action": "Boil-stove-closed",
+    "number": 26
+  },
+  {
+    "code": "STOplus",
+    "action": "Boil-stove-open-add-asccarb",
+    "number": 27
+  },
+  {
+    "code": "STO",
+    "action": "Boil-stove-open",
+    "number": 28
+  },
+  {
+    "code": "MI",
+    "action": "Boil-microwave",
+    "number": 29
+  }
+]
