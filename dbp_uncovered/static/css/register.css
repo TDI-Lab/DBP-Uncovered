@@ -409,7 +409,7 @@ body {
   border-radius: 3px;
 }
 
-/* Subtle animation for form validation */
+/* Animation for form validation */
 .form-group.error {
   animation: subtleShake 0.3s ease-in-out;
 }
