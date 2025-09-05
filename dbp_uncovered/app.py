@@ -59,7 +59,7 @@ def load_challenge_questions():
 def normalize_ratings(ratings: dict) -> dict:
     total = sum(ratings.values())
     if total == 0:
-        return {k: 0 for k in ratings}  # Avoid division by zero
+        return {k: 0 for k in ratings}
     return {k: round(v / total, 8) for k, v in ratings.items()}
 
 DBP_ranking_dict = {
@@ -540,7 +540,6 @@ def action_reaction_results():
         # Extract only the additional information (ti, cost, freq, effc)
         additional_info = extract_additional_info(user_response)
         additional_info_disp = extract_additional_info_disp(user_response)
-        # Get your actual data (replace this with your actual data processing)
         data_series = get_user_data_series(user_response, additional_info)
         
 
@@ -714,7 +713,6 @@ def view_survey_result(survey_id):
         additional_info = extract_additional_info(user_response)
         additional_info_disp = extract_additional_info_disp(user_response)
         #df = topsis(r_dict)
-        # Get your actual data (replace this with your actual data processing)
         data_series = get_user_data_series(user_response, additional_info)
         
 
